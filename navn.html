@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0">
+
+    <title>Navn</title>
+    <!--This title will be the heading on google search and on the tab in the browser. Can contain up to 70 characters-->
+    <meta name="description" content="Here you add the description of your content">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Sigmar+One');
+    </style>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+
+<body>
+    <div class="indtast">
+        <div>
+            <label for="kategori" class="etiket">skriv dit navn</label>
+            <input id="kategori" class="indtastningsfelt">
+        </div>
+    </div>
+    <img id="mittree" src="images/tree.png">
+    <img id="grass-dark" class="grass" src="images/grass-dark.png" height="70px">
+    <img id="grass-lys" class="grass" src="images/grass-lys.png" height="60px">
+    <img id="mittree2" src="images/tree.png">
+    <img id="minskyleft" src="images/sky.png">
+    <img id="minskysmall" src="images/sky.png">
+    <img id="minskyright" src="images/sky.png">
+    <a href="alder.html"><img id="til-alder" class="arrows" src="images/arrow-forward.png"></a>
+
+    <div id="indhold"></div>
+    <script src="mitjs.js"></script>
+    <script>
+        document.getElementById("til-alder").addEventListener("click", function() {
+            gemData("navn");
+        });
+    </script>
+</body>
+</html>

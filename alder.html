@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0">
+
+    <title>Alder</title>
+    <!--This title will be the heading on google search and on the tab in the browser. Can contain up to 70 characters-->
+    <meta name="description" content="Here you add the description of your content">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Sigmar+One');
+
+    </style>
+</head>
+
+<body id="alder-body">
+    <div class="indtast">
+        <div>
+            <label for="kategori" class="etiket">skriv din alder</label>
+            <input id="kategori" class="indtastningsfelt">
+        </div>
+    </div>
+
+    <img src="images/sky.png" id="skyAlder1">
+    <img src="images/sky.png" id="skyAlder2">
+    <img src="images/sky.png" id="skyAlder3">
+    <img src="images/sky.png" id="skyAlder4">
+
+    <container class="trees">
+        <img src="images/giraf-done.png" width="8%" height="200px" id="giraf-alder">
+        <img src="images/tree.png" width="30%" height="225px" id="tree1">
+        <img src="images/tree.png" width="60%" height="600px" id="tree2">
+    </container>
+
+    <img src="images/grass-dark.png" width="100%" height="70px" class="grass">
+    <img src="images/grass-lys.png" width="100%" height="60px" class="grass">
+    <a href="foto.html"><img id="til-foto" class="arrows" src="images/arrow-forward.png"></a>
+    <a href="navn.html"><img id="tilbage-navn" class="arrows" src="images/arrow-backward.png"></a>
+
+
+    <div id="indhold"></div>
+    <script src="mitjs.js"></script>
+    <script>
+        document.getElementById("til-foto").addEventListener("click", function() {
+            gemData("alder");
+        });
+    </script>
+</body>
+
+</html>
